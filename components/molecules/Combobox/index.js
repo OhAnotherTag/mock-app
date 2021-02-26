@@ -37,10 +37,6 @@ function Combobox({
   const comboboxRef = useRef();
 
   useEffect(() => {
-    updateResults(false);
-  }, [inputValue]);
-
-  useEffect(() => {
     document.addEventListener('click', checkHide);
     return () => {
       document.removeEventListener('click', checkHide);
